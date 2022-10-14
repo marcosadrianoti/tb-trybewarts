@@ -9,3 +9,12 @@ function loginVerify() {
   }
 }
 btnLogin.addEventListener('click', loginVerify);
+
+const checkBoxAgreement = document.getElementById('agreement');
+
+function agreement() {
+  const btnSubmit = document.getElementById('submit-btn');
+  btnSubmit.removeAttribute("disabled");
+}
+
+checkBoxAgreement.addEventListener('click', agreement);
