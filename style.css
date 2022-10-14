@@ -12,6 +12,16 @@ main {
   height: 500px;
 }
 
+#family-container {
+  display: flex;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
