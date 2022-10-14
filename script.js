@@ -14,7 +14,7 @@ const checkBoxAgreement = document.getElementById('agreement');
 
 function agreement() {
   const btnSubmit = document.getElementById('submit-btn');
-  btnSubmit.removeAttribute("disabled");
+  btnSubmit.removeAttribute('disabled');
 }
 
 checkBoxAgreement.addEventListener('click', agreement);
