@@ -8,6 +8,10 @@ main {
   width: 675px;
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
