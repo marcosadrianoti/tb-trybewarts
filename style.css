@@ -12,14 +12,14 @@ main {
   height: 500px;
 }
 
-#family-container {
-  display: flex;
-}
-
 #family, #content-container {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+}
+
+#family-container {
+  display: flex;
 }
 
 .header {
