@@ -30,7 +30,7 @@ function counterTextarea() {
 }
 inputTextarea.addEventListener('input', counterTextarea);
 
-//Executa o botão Enviar
+// Executa o botão Enviar
 const formEvaluation = document.getElementById('evaluation-form');
 const formData = document.getElementById('form-data');
 const inputName = document.getElementById('input-name');
