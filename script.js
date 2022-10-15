@@ -56,7 +56,6 @@ function desiredContent() {
   }
   return contentsToReturn.slice(0, contentsToReturn.length - 2);
 }
-
 function whatRate() {
   for (const rate of rates) {
     if (rate.checked) {
@@ -78,7 +77,4 @@ function submit(event) {
   `;
   formData.style.display = '';
 }
-
-
 btnSubmit.addEventListener('click', submit);
-
