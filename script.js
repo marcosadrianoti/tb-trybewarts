@@ -79,5 +79,4 @@ function submit(event) {
   formData.style.display = '';
 }
 
-
 btnSubmit.addEventListener('click', submit);
