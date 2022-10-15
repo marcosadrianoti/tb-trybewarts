@@ -57,11 +57,17 @@ function desiredContent() {
   return contentsToReturn.slice(0, contentsToReturn.length - 2);
 }
 function whatRate() {
-  for (const rate of rates) {
-    if (rate.checked) {
-      return rate.value;
-    }
+  for (let index = 0; index < rates.length - 1; index++) {
+    if (rates[index].checked) {
+          return rates[index].value;
+        };
+    
   }
+  // for (const rate of rates) {
+  //   if (rate.checked) {
+  //     return rate.value;
+  //   }
+  // }
 }
 function submit(event) {
   event.preventDefault();
