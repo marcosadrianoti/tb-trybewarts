@@ -40,21 +40,6 @@ const userHouse = document.getElementById('house');
 const families = document.getElementsByName('family');
 const desiredContents = document.getElementsByName('desiredContent');
 const rates = document.getElementsByName('rate');
-function submit(event) {
-  event.preventDefault();
-  formEvaluation.style.display = 'none';
-  formData.innerText = `
-    Nome: ${inputName.value} ${inputLastName.value}\n
-    Email: ${userEmail.value}\n
-    Casa: ${userHouse.value}\n
-    Família: ${whatFamily()}\n
-    Matérias: ${desiredContent()}\n
-    Avaliação: ${whatRate()}\n
-    Observações: ${inputTextarea.value}
-  `;
-  formData.style.display = '';
-}
-
 function whatFamily() {
   for (const family of families) {
     if (family.checked) {
@@ -62,11 +47,8 @@ function whatFamily() {
     }
   }
 }
-
-btnSubmit.addEventListener('click', submit);
-
 function desiredContent() {
-  let contentsToReturn = ''
+  let contentsToReturn = '';
   for (const content of desiredContents) {
     if (content.checked) {
       contentsToReturn += `${content.value}, `;
@@ -82,3 +64,21 @@ function whatRate() {
     }
   }
 }
+function submit(event) {
+  event.preventDefault();
+  formEvaluation.style.display = 'none';
+  formData.innerText = `
+    Nome: ${inputName.value} ${inputLastName.value}\n
+    Email: ${userEmail.value}\n
+    Casa: ${userHouse.value}\n
+    Família: ${whatFamily()}\n
+    Matérias: ${desiredContent()}\n
+    Avaliação: ${whatRate()}\n
+    Observações: ${inputTextarea.value}
+  `;
+  formData.style.display = '';
+}
+
+
+btnSubmit.addEventListener('click', submit);
+
