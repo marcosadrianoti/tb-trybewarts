@@ -18,3 +18,14 @@ function agreement() {
 }
 
 checkBoxAgreement.addEventListener('click', agreement);
+
+const inputTextarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+const maxCharacters = 500;
+let count = null;
+function counterTextarea() {
+  count = inputTextarea.value.length;
+  counter.innerText = maxCharacters - count;
+}
+
+inputTextarea.addEventListener('input', counterTextarea);
