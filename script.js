@@ -35,7 +35,6 @@ const formEvaluation = document.getElementById('evaluation-form');
 const formData = document.getElementById('form-data');
 const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
-// const userName = `Nome: ${inputName.value} ${inputLastName.value}\n`
 const userEmail = document.getElementById('input-email');
 const userHouse = document.getElementById('house');
 const families = document.getElementsByName('family');
