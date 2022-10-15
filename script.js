@@ -1,9 +1,9 @@
 // Executa o botão Login
 const btnLogin = document.getElementById('btn-login');
+const inputLoginEmail = document.getElementById('email');
+const inputLoginPassword = document.getElementById('password');
 function loginVerify() {
-  const inputEmail = document.getElementById('email').value;
-  const inputPassword = document.getElementById('password').value;
-  if (inputEmail === 'tryber@teste.com' && inputPassword === '123456') {
+  if (inputLoginEmail.value === 'tryber@teste.com' && inputLoginPassword.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
@@ -33,10 +33,53 @@ inputTextarea.addEventListener('input', counterTextarea);
 //Executa o botão Enviar
 const formEvaluation = document.getElementById('evaluation-form');
 const formData = document.getElementById('form-data');
+const inputName = document.getElementById('input-name');
+const inputLastName = document.getElementById('input-lastname');
+// const userName = `Nome: ${inputName.value} ${inputLastName.value}\n`
+const userEmail = document.getElementById('input-email');
+const userHouse = document.getElementById('house');
+const families = document.getElementsByName('family');
+const desiredContents = document.getElementsByName('desiredContent');
+const rates = document.getElementsByName('rate');
 function submit(event) {
   event.preventDefault();
   formEvaluation.style.display = 'none';
+  formData.innerText = `
+    Nome: ${inputName.value} ${inputLastName.value}\n
+    Email: ${userEmail.value}\n
+    Casa: ${userHouse.value}\n
+    Família: ${whatFamily()}\n
+    Matérias: ${desiredContent()}\n
+    Avaliação: ${whatRate()}\n
+    Observações: ${inputTextarea.value}
+  `;
   formData.style.display = '';
 }
 
+function whatFamily() {
+  for (const family of families) {
+    if (family.checked) {
+      return family.value;
+    }
+  }
+}
+
 btnSubmit.addEventListener('click', submit);
+
+function desiredContent() {
+  let contentsToReturn = ''
+  for (const content of desiredContents) {
+    if (content.checked) {
+      contentsToReturn += `${content.value}, `;
+    }
+  }
+  return contentsToReturn.slice(0, contentsToReturn.length - 2);
+}
+
+function whatRate() {
+  for (const rate of rates) {
+    if (rate.checked) {
+      return rate.value;
+    }
+  }
+}
