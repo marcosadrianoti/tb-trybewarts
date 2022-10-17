@@ -4,7 +4,6 @@
 
 main {
   display: flex;
-  /* border: solid red 1px; */
   width: 80%;
   margin: auto;
   text-align: center;
@@ -22,7 +21,6 @@ hr {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  /* border: blue solid 1px; */
   width: 100%;
 }
 
@@ -32,40 +30,30 @@ hr {
 
 #family-container {
   display: flex;
-  /* font-size: 18px; */
   height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* border: red solid 1px; */
 }
 
-#family,
-#content-container {
+#family , #content-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
 }
 
 #content-container {
   display: flex;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
-  /* border: black solid 1px; */
-  /* flex-grow: 2; */
 }
 
 #family {
-  /* border: black solid 1px; */
   align-items: flex-start;
   padding-right: 100px;
 }
 
 #form-data {
   font-size: 10px;
-  /* display: flex; */
   width: 100%;
   height: 500px;
-  /* border: solid red 1px; */
 }
 
 #email {
@@ -89,12 +77,10 @@ hr {
 }
 
 #form-section {
-  /* border: solid yellow 1px; */
   width: 60%;
 }
 
 #first-infos {
-  /* border: solid blue 1px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,7 +91,6 @@ hr {
 
 #name-lastname {
   display: flex;
-  /* border: solid red 1px;    */
   width: 100%;
   justify-content: space-between;
 }
@@ -128,7 +113,6 @@ hr {
 
 #boxes {
   display: flex;
-  /* border: blue solid 1px; */
   width: 400px;
   flex-wrap: wrap;
 }
@@ -159,11 +143,9 @@ hr {
 
 #trybe-big-logo {
   display: flex;
-  /* border: solid red 1px; */
   flex-grow: 2;
   justify-content: center;
   align-items: center;
-  /* margin-left: 200px; */
 }
 
 #label-infos {
@@ -204,7 +186,6 @@ hr {
   align-items: center;
   padding: 0 20px;
   font-size: 25px;
-  /* border: solid red 1px; */
   height: 100px;
 }
 
@@ -212,7 +193,6 @@ hr {
   display: flex;
   justify-content: space-evenly;
   width: 600px;
-  /* border: solid red 1px; */
 }
 
 .trybewarts-header-logo {
