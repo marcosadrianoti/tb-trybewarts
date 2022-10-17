@@ -41,42 +41,28 @@ const families = document.getElementsByName('family');
 const desiredContents = document.getElementsByName('desiredContent');
 const rates = document.getElementsByName('rate');
 function whatFamily() {
-  for (let index = 0; index < families.length; index += 1) {
-    if (families[index].checked) {
-      return families[index].value;
+  for (const family of families) {
+    if (family.checked) {
+      return family.value;
     }
   }
-  // for (const family of families) {
-  //   if (family.checked) {
-  //     return family.value;
-  //   }
-  // }
 }
 function desiredContent() {
   let contentsToReturn = '';
-  for (let index = 0; index < desiredContents.length; index += 1) {
-    if (desiredContents[index].checked) {
-      contentsToReturn += `${desiredContents[index].value}, `;
+  for (const content of desiredContents) {
+    if (content.checked) {
+      contentsToReturn += `${content.value}, `;
     }
   }
-  // for (const content of desiredContents) {
-  //   if (content.checked) {
-  //     contentsToReturn += `${content.value}, `;
-  //   }
-  // }
   return contentsToReturn.slice(0, contentsToReturn.length - 2);
 }
+
 function whatRate() {
-  for (let index = 0; index < rates.length; index += 1) {
-    if (rates[index].checked) {
-      return rates[index].value;
+  for (const rate of rates) {
+    if (rate.checked) {
+      return rate.value;
     }
   }
-  // for (const rate of rates) {
-  //   if (rate.checked) {
-  //     return rate.value;
-  //   }
-  // }
 }
 function submit(event) {
   event.preventDefault();
