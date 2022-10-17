@@ -1,5 +1,5 @@
 * {
-  font-family: Inknut Antiqua, Times, serif;
+  font-family: Inknut Antiqua, Times, Serif;
 }
 
 main {
@@ -11,7 +11,7 @@ main {
 
 body {
   background-color: rgb(240, 240, 240);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 hr {
@@ -21,7 +21,7 @@ hr {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -47,7 +47,8 @@ hr {
 
 #family {
   align-items: flex-start;
-  padding-right: 100px;
+  padding-right: 80px;
+  width: 300px;
 }
 
 #form-data {
@@ -137,7 +138,7 @@ hr {
 
 #counter {
   position: absolute;
-  margin-left: 800px;
+  margin-left: 650px;
   margin-top: 115px;
 }
 
@@ -146,6 +147,7 @@ hr {
   flex-grow: 2;
   justify-content: center;
   align-items: center;
+  margin-left: 150px;
 }
 
 #label-infos {
