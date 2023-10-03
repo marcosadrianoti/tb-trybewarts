@@ -4,7 +4,7 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong> Objetivos do projeto:</strong></summary>
 
-  * Desenvolver uma página de formulário da "Escola de Magia de Trybewarts", em que as pessoas estudantes poderão enviar seus feedbacks sobre ela
+  * Desenvolver uma página de formulário da "Escola de Magia de Trybewarts", em que as pessoas estudantes poderão enviar seus feedbacks sobre ela.
   * Verificar se eu era capaz de implementar um formulário usando JavaScript, CSS e HTML.
 </details>
 <details>
@@ -29,7 +29,7 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 * Criar um botão de "Enviar" para submeter o formulário.
 * Habilitar o botão "Enviar" após a validação do checkbox.
 * Criar um rodapé ao final da página.
-* Requisitos Bônus
+* Requisitos Bônus:
   * Criar um contador de caracteres.
   * Substituir o formulário pelas informações da pessoa estudante.
 </details>
